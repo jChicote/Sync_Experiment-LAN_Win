@@ -14,7 +14,7 @@ namespace SyncNotesAppTest_Windows.Models
 
         public DateTime CreatedAt { get; set; }
 
-        public Guid CreationUser { get; set; }
+        public Guid OwningUserID { get; set; }
 
         public bool IsDeleted { get; set; }
 
