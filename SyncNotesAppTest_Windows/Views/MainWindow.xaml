@@ -21,6 +21,7 @@
                 <TextBlock x:Name="User_Name" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" Panel.ZIndex="2" Height="24" Width="174"/>
             </StackPanel>
             <ScrollViewer Margin="0,0,0,0" Background="#FFC35858" Grid.Row="1" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+            <Button x:Name="NewNoteButton" Content="New Note" HorizontalAlignment="Left" Margin="10,10,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="80" Height="40"/>
         </Grid>
 
         <Grid Grid.Column="1" Background="#FFECE8E1">
@@ -35,11 +36,11 @@
             </Grid.ColumnDefinitions>
 
             <Rectangle Grid.Row="0" Grid.Column="0" Fill="#FFDAD6C9"/>
-            <TextBox Background="#FFDAD6C9" Grid.Row="0" Grid.Column="1" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
+            <TextBox x:Name="NoteTitle" Background="#FFDAD6C9" Grid.Row="0" Grid.Column="1" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
             <Rectangle Grid.Row="0" Grid.Column="2" Fill="#FFDAD6C9"/>
 
             <Rectangle Grid.Row="1" Grid.Column="0" Fill="#FFF1EBE0"/>
-            <TextBox Background="#FFF1EBE0" Grid.Row="1" Grid.Column="1" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
+            <TextBox x:Name="NoteTextContent" Background="#FFF1EBE0" Grid.Row="1" Grid.Column="1" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
             <Rectangle Grid.Row="1" Grid.Column="2" Fill="#FFF1EBE0"/>
         </Grid>
     </Grid>

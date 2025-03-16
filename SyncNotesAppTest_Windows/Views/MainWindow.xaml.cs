@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SyncNotesAppTest_Windows.ViewModels;
 
 namespace SyncNotesAppTest_Windows
 {
@@ -19,6 +20,8 @@ namespace SyncNotesAppTest_Windows
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new MainViewModel();
         }
     }
 }
