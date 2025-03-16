@@ -21,7 +21,7 @@ namespace SyncNotesAppTest_Windows.Application.Data
         {
             var _Folder = Environment.SpecialFolder.LocalApplicationData;
             var _Path = Environment.GetFolderPath(_Folder);
-            DbPath = System.IO.Path.Join(_Path, "blogging.db");
+            DbPath = System.IO.Path.Join(_Path, "SyncNoteTest_Development.db");
         }
 
         #endregion Constructors
