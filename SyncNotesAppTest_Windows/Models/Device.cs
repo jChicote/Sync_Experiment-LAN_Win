@@ -12,7 +12,7 @@ namespace SyncNotesAppTest_Windows.Models
 
         public Guid DeviceID { get; set; }
 
-        public Guid AssociatedUser { get; set; }
+        public Guid AssociatedUserID { get; set; }
 
     }
 
