@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace SyncNotesAppTest_Windows.Models
 {
@@ -11,6 +6,7 @@ namespace SyncNotesAppTest_Windows.Models
     public class SyncChanges
     {
 
+        [Key]
         public Guid ChangeID { get; set; }
 
         public string ChangeData { get; set; }
