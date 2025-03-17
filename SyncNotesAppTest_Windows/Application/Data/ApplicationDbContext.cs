@@ -9,7 +9,13 @@ namespace SyncNotesAppTest_Windows.Application.Data
 
         #region - - - - - Properties - - - - -
 
+        public DbSet<Device> Devices { get; set; }
+
         public DbSet<Note> Notes { get; set; }
+
+        public DbSet<SyncChanges> SyncChanges { get; set; }
+
+        public DbSet<User> Users { get; set; }
 
         public string DbPath { get; }
 

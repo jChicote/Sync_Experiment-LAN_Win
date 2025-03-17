@@ -14,7 +14,7 @@ namespace SyncNotesAppTest_Windows
             InitializeComponent();
 
             this.DataContext = new MainViewModel();
-            _ = new ApplicationDbContext();
+            _ = new ApplicationDbContext(); // This is for dbContext testing
         }
     }
 }
